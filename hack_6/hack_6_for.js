@@ -8,7 +8,11 @@
  */
 let str = "fooziman";
 let result = [];
+let arr=[...str];
 
+for (i=0;i<arr.length;i++) {
+    result.push(arr[i])
+}
 
 //export result
 module.exports = result;

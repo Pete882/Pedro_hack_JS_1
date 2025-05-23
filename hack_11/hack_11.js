@@ -19,6 +19,24 @@ let numberArray = [1,2,3,4,5];
 let stringArray = ["foo","bar","baz","qux","echo"]
 let result = [];
 
+let alpha = numberArray.map(num =>{
+    if (num === 1 ) return "one";
+    if (num ===3) return "three";
+    if (num ===5) return "five";
+    return num;
+});
+
+let beta = stringArray.map(str =>{
+    if (str === "foo") return "f00";
+    if (str === "bar") return "Bar";
+    if (str === "baz") return "b@z";
+    if (str === "qux") return "quX";
+    if (str === "echo") return "3ch0";
+    return str;
+} )
+
+
+result = ["h@ck", ...alpha, "h@ck", ...beta, "h@ck"];
 
 //export result
 module.exports = result;

@@ -8,6 +8,12 @@
  */
 let str = "fooziman";
 let result = [];
+let arr = [...str];
+let i = 0;
+
+while (i<arr.length) {
+    result.push(arr[i]);i++
+}
 
 
 //export result
